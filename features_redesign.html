@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Features – HelloBookkeeping</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Hero Section -->
+  <section class="text-center py-12 px-4 bg-gray-50">
+    <h1 class="text-4xl font-bold mb-4">Our Features</h1>
+    <p class="text-lg text-gray-600">AI-powered accounting tools designed to simplify your business finances.</p>
+  </section>
+
+  <!-- Top 4 Features -->
+  <section class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 px-4 py-12">
+    <div class="bg-white shadow-md rounded-2xl p-6">
+      <h3 class="text-xl font-semibold mb-2">Automated Bookkeeping</h3>
+      <p class="text-gray-600">Let AI handle your daily entries and transactions with full accuracy.</p>
+    </div>
+    <div class="bg-white shadow-md rounded-2xl p-6">
+      <h3 class="text-xl font-semibold mb-2">Real-Time Reporting</h3>
+      <p class="text-gray-600">Get live reports on cash flow, expenses, and revenue anytime.</p>
+    </div>
+    <div class="bg-white shadow-md rounded-2xl p-6">
+      <h3 class="text-xl font-semibold mb-2">Tax Calculations</h3>
+      <p class="text-gray-600">Automatically calculate tax obligations and prepare filings.</p>
+    </div>
+    <div class="bg-white shadow-md rounded-2xl p-6">
+      <h3 class="text-xl font-semibold mb-2">Multi-Device Sync</h3>
+      <p class="text-gray-600">Access your books from desktop, mobile, or tablet with cloud sync.</p>
+    </div>
+  </section>
+
+  <!-- View More -->
+  <section class="text-center">
+    <button id="toggleBtn" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
+      View More Features
+    </button>
+  </section>
+
+  <!-- Hidden Additional Features -->
+  <section id="moreFeatures" class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 px-4 py-8 hidden">
+    <div class="bg-gray-100 rounded-xl p-5">
+      <h3 class="font-semibold text-lg">Bank Reconciliation</h3>
+      <p>Match your records with bank data instantly.</p>
+    </div>
+    <div class="bg-gray-100 rounded-xl p-5">
+      <h3 class="font-semibold text-lg">Invoice Automation</h3>
+      <p>Create and send invoices with automated follow-ups.</p>
+    </div>
+    <div class="bg-gray-100 rounded-xl p-5">
+      <h3 class="font-semibold text-lg">Expense Categorization</h3>
+      <p>AI automatically tags and sorts your expenses.</p>
+    </div>
+    <div class="bg-gray-100 rounded-xl p-5">
+      <h3 class="font-semibold text-lg">Integrations</h3>
+      <p>Works with your CRM, POS, and payment platforms.</p>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="text-center py-12">
+    <h2 class="text-2xl font-bold mb-4">Ready to Simplify Your Finances?</h2>
+    <a href="#" class="inline-block bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700">
+      Try HelloBookkeeping Free
+    </a>
+  </section>
+
+  <!-- Toggle Script -->
+  <script>
+    const btn = document.getElementById('toggleBtn');
+    const more = document.getElementById('moreFeatures');
+    btn.addEventListener('click', () => {
+      more.classList.toggle('hidden');
+      btn.textContent = more.classList.contains('hidden') ? 'View More Features' : 'Hide Features';
+    });
+  </script>
+</body>
+</html>
